@@ -30,4 +30,10 @@ int main() {
 
   char ch1 = 123456;
   cout << ch1 << endl;
+  
+  unsigned int g = 112;
+  cout << g << endl;
+
+  unsigned int h = -112;
+  cout << h << endl;
 }
