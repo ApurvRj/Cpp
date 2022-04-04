@@ -1,0 +1,17 @@
+// conditional statements and while loop
+#include <iostream>
+using namespace std;
+int main() {
+  int a, i=1, sum=0;
+  cin >> a ;
+  while(i<=a){
+    if(a==0){
+    cout <<"sum is zero!" << endl ;
+    }
+    else {
+      sum = sum + i;
+      i++;
+    }
+  }
+  cout<<"sum is :"<< sum<< endl;
+}
