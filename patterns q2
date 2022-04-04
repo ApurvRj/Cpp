@@ -1,4 +1,8 @@
 // when row= column with each row has its own no.
+// 0000
+// 1111
+// 2222
+// 3333
 #include <iostream>
 using namespace std;
 int main() {
@@ -10,3 +14,20 @@ int main() {
     }cout<<endl;
   }
 }
+
+// for this pattern
+// 0123
+// 0123
+// 0123
+// 0123
+// #include <iostream>
+// using namespace std;
+// int main() {
+//   int i,j,n;
+//   cin>>n;
+//   for(i=0; i<n; i++){
+//     for(j=0; j<n; j++){
+//       cout<<j;
+//     }cout<<endl;
+//   }
+// }
