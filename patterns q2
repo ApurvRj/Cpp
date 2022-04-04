@@ -1,0 +1,12 @@
+// when row= column with each row has its own no.
+#include <iostream>
+using namespace std;
+int main() {
+  int i,j,n;
+  cin>>n;
+  for(i=0; i<n; i++){
+    for(j=0; j<n; j++){
+      cout<<i;
+    }cout<<endl;
+  }
+}
