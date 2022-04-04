@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main() {
+  int i=2, n ;
+  bool isprime=true;
+  cin>> n;
+  while (i<n){
+    if(n%i==0){
+      isprime = false;
+    }i++;  
+  }
+  if(isprime){
+    cout<<n<<" is a prime no"<<endl;
+    
+  }
+  else{
+    cout<<n<<" is not a prime no"<<endl;
+  }
+}
