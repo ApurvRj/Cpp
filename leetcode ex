@@ -1,0 +1,84 @@
+//given a number, find the product of digits and sum of digits of the number and find the diff. b/w product and sum
+// #include <iostream>
+// using namespace std;
+// int main() {
+//   int n;
+//   cin>>n;
+//   int prod=1;
+//   int sum=0;
+//   while(n!=0){
+//     int digit = n%10;
+//     prod= prod*digit;
+//     sum=sum+digit;
+//     n=n/10;
+//   }cout<<prod<<endl;
+//   cout<<sum<<endl;
+//   int diff=prod-sum;
+//   cout<<diff<<endl;
+// }
+
+//taking a integer and counting the no. of ones after converting the no. in binary form
+// #include <iostream>
+// using namespace std;
+// int main() {
+//   int n;
+//   int count=0;
+//   cin>>n;
+//   while(n!=0){
+//     if(n&1){
+//       count++;
+//     }n=n>>1;
+//   }cout<< count;
+// }
+
+// given a signed 32bit integer , return reverse of the integer , and return 0 if reverse goes outside range of signed bits
+// #include <iostream>
+// #include<limits.h>
+// using namespace std;
+// int main() {
+//   int n;
+//   int ans=0;
+//   cin>>n;
+//   while(n!=0){
+//     int rem=n%10;
+//     if((ans<INT_MIN/10)||(ans>INT_MAX/10)){
+//       return 0;
+//       }
+//     ans=ans*10+rem;
+//     n=n/10;
+//   }cout<<ans;
+// }
+
+//complemnet of base 10 interger
+// #include <iostream>
+// using namespace std;
+// int main(){
+//   int n;
+//   cin>>n;
+//   int mask=0;
+//   if(n==0){
+//     cout<<"0";
+//   }
+//   while(n!=0){
+//     mask=(mask<<1)|1;
+//     n=n>>1;
+//   }int ans=(~n)&mask;
+//   cout<<ans;
+// }
+
+//power of 2
+// #include <iostream>
+// #include <math.h>
+// using namespace std;
+// int main(){
+//   int n,i;
+//   cin>>n;
+//   for(i=0; i < 31;i++)
+//   {
+//     int ans = pow(2,i);
+//     if(ans==n)
+//     {
+//     cout<<"true";
+//     }cout<<"false;"
+//     }
+//  }
