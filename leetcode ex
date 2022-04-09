@@ -82,3 +82,119 @@
 //     }cout<<"false;"
 //     }
 //  }
+
+//swap alternates
+// #include <iostream>
+// using namespace std;
+// void swapAlternates(int arr[], int n){
+//   for(int i=0;i<n;i+=2){
+//     int temp=arr[i];
+//     arr[i]=arr[i+1];
+//     arr[i+1]=temp;
+//   }
+// }
+// void printArray(int arr[], int n){
+//   for(int i=0;i<n;i++){
+//     cout<<arr[i]<<" ";
+//   }
+// }
+// int main(){
+//   int a[6]={1,2,3,4,5,6};
+//   swapAlternates(a,6);
+//   printArray(a,6); 
+// }
+
+//find unique
+// #include <iostream>
+// using namespace std;
+// int unique(int arr[], int n){
+//   int ans =0;
+//   for(int i=0; i<n; i++){
+//     ans = ans^arr[i];
+//   }return ans;
+// }
+
+// int main(){
+//   int arr[5]={1,2,1,2,6};
+//   int c=unique(arr,5);
+//   cout<<"unique value is "<<c<<endl;
+//   return 0;
+// }
+
+
+
+//intersection
+// #include<iostream>
+// using namespace std;
+// int intersect(int arr1[], int arr2[], int n){
+//   for(int i=0; i<n; i++){
+//     int ele = arr1[i];
+//     for(int j=0; j<n; j++){
+//       if(ele==arr2[j]){
+//         cout<<ele<<endl;
+//         arr2[j]=INT32_MIN;
+//         break;
+//       }
+//     }
+//   }return 0;
+// }
+
+// int main(){
+//   int arr1[4]={1,2,3,4};
+//   int arr2[4]={1,5,6,2};
+//   intersect(arr1,arr2,4);
+// }
+
+//pair sum
+// #include <iostream>
+// using namespace std;
+// int pairsum(int arr[],int n, int s){
+//   for(int i=0; i<n; i++){
+//     for(int j=i+1;j<n;j++){
+//       if (arr[i]+arr[j]==s){
+//         int temp1,temp2;
+//         temp1=min(arr[i],arr[j]);
+//         temp2=max(arr[i],arr[j]);
+//         cout<<temp1;
+//         cout<<temp2<<endl;
+//       }
+//     }
+//   }return 0;
+// }
+// int main(){
+//   int arr[5]={1,2,3,4,5};
+//   int s=5;
+//   pairsum(arr,5,5);
+// }
+
+//sort 0,1
+// #include<iostream>
+// using namespace std;
+// void sort(int arr[], int n){
+//   int start=0;
+//   int end=n-1;
+//   while(start<end){
+//     while(arr[start]==0 && start<end){
+//       start++;
+//     }
+//     while(arr[end]==1 && start<end){
+//       end--;
+//     }
+//     if(start<end){
+//       swap(arr[start],arr[end]);
+//       start++;
+//       end--;
+      
+//     }
+//   }
+// }
+// void printArray(int arr[], int n){
+//   for(int i=0;i<n;i++){
+//     cout<<arr[i]<<" ";
+//   }
+// }
+// int main(){
+//   int arr[6]={0,1,0,1,1,1};
+//   sort(arr,6);
+//   printArray(arr,6);
+// }
